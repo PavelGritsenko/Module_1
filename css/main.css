@@ -801,6 +801,10 @@ main {
         font-size: 18px;
     }
 
+    .menu_list a:hover {
+        color: #a8b0eb;
+    }
+
     .burger {
         display: block;
     }
