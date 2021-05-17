@@ -677,56 +677,49 @@ main {
     color: #fff;
 }
 
-
 .footer_contact_inner {
     display: flex;
     flex-wrap: wrap;
 }
 
-.footer_contact_inner a {
+.footer_contact_inner a,
+.footer_contact_inner span {
     display: block;
 }
 
-.addres_phone {
-    width: 50%;
-    padding-right: 70px;
-}
-
-.mail_web {
-    width: 50%;
-}
-
-.location {
-    font-style: normal;
-}
-
-.icon-location, 
-.icon-call,
-.icon-envelope,
-.icon-planet {
+.footer_contact_inner span {
     margin-right: 15px;
     font-size: 16px;
     line-height: 1.375;
     color: #fff;
 }
 
-.addres {
+.addres_phone,
+.mail_web {
+    width: 50%;
+}
+
+.addres,
+.phone_number,
+.mail,
+.web {
     display: flex;
+}
+
+.addres {
+    padding-right: 110px;
     margin-bottom: 25px;
 }
 
-.phone_number {
-    display: flex;
+.location {
+    font-style: normal;
 }
 
 .mail {
-    margin-bottom: 30px;
+    margin-bottom: 2.5em;
 }
 
-.location:hover, 
-.mail:hover,
-.phone:hover,
-.web:hover {
+.footer_contact_inner a:hover {
     text-decoration: underline;
 }
 
@@ -759,6 +752,10 @@ main {
         width: 570px;
         padding: 0;
     } 
+
+    .mail {
+        margin-bottom: 3.5em;
+    }
 }  
 
 @media (max-width: 991px) {
@@ -843,6 +840,10 @@ main {
 
     .footer_about {
         padding-right: 60px;
+    }
+
+    .mail {
+        margin-bottom: 25px;
     }
 }
 
